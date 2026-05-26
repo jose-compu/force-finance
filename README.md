@@ -1,14 +1,20 @@
 <div align="center">
 
-```
-······································································································
-:    dMMMMMP .aMMMb  dMMMMb  .aMMMb  dMMMMMP      dMMMMMP dMP dMMMMb  .aMMMb  dMMMMb  .aMMMb  dMMMMMP:
-:   dMP     dMP"dMP dMP.dMP dMP"VMP dMP          dMP     amr dMP dMP dMP"dMP dMP dMP dMP"VMP dMP     :
-:  dMMMP   dMP dMP dMMMMK" dMP     dMMMP        dMMMP   dMP dMP dMP dMMMMMP dMP dMP dMP     dMMMP    :
-: dMP     dMP.aMP dMP"AMF dMP.aMP dMP     amr  dMP     dMP dMP dMP dMP dMP dMP dMP dMP.aMP dMP       :
-:dMP      VMMMP" dMP dMP  VMMMP" dMMMMMP dMP  dMP     dMP dMP dMP dMP dMP dMP dMP  VMMMP" dMMMMMP    :
-······································································································
-```
+<pre>
+.-------------------------------------------------------.
+|    dMMMMMP .aMMMb  dMMMMb  .aMMMb  dMMMMMP            |
+|   dMP     dMP"dMP dMP.dMP dMP"VMP dMP                 |
+|  dMMMP   dMP dMP dMMMMK" dMP     dMMMP                |
+| dMP     dMP.aMP dMP"AMF dMP.aMP dMP     amr           |
+|dMP      VMMMP" dMP dMP  VMMMP" dMMMMMP dMP            |
+|                                                       |
+|    dMMMMMP dMP dMMMMb  .aMMMb  dMMMMb  .aMMMb  dMMMMMP|
+|   dMP     amr dMP dMP dMP"dMP dMP dMP dMP"VMP dMP     |
+|  dMMMP   dMP dMP dMP dMMMMMP dMP dMP dMP     dMMMP    |
+| dMP     dMP dMP dMP dMP dMP dMP dMP dMP.aMP dMP       |
+|dMP     dMP dMP dMP dMP dMP dMP dMP  VMMMP" dMMMMMP    |
+'-------------------------------------------------------'
+</pre>
 
 **FUSD** · Avalanche C-Chain · Delta-Neutral Stablecoin
 
