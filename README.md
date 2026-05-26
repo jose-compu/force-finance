@@ -1,3 +1,5 @@
+<div align="center">
+
 ```
 ······································································································
 :    dMMMMMP .aMMMb  dMMMMb  .aMMMb  dMMMMMP      dMMMMMP dMP dMMMMb  .aMMMb  dMMMMb  .aMMMb  dMMMMMP:
@@ -6,8 +8,9 @@
 : dMP     dMP.aMP dMP"AMF dMP.aMP dMP     amr  dMP     dMP dMP dMP dMP dMP dMP dMP dMP.aMP dMP       :
 :dMP      VMMMP" dMP dMP  VMMMP" dMMMMMP dMP  dMP     dMP dMP dMP dMP dMP dMP dMP  VMMMP" dMMMMMP    :
 ······································································································
-  Avalanche LST + GMX Delta-Neutral Stablecoin · FUSD
 ```
+
+**FUSD** · Avalanche C-Chain · Delta-Neutral Stablecoin
 
 [![CI](https://github.com/jose-compu/force-finance/actions/workflows/ci.yml/badge.svg)](https://github.com/jose-compu/force-finance/actions/workflows/ci.yml)
 [![License: BUSL-1.1](https://img.shields.io/badge/License-BUSL--1.1-0052FF?labelColor=1a1a2e)](LICENSE.md)
@@ -18,6 +21,8 @@
 [![Tests](https://img.shields.io/badge/Unit%20Tests-256%20passing-brightgreen)](#testing--ci)
 [![Contract Size](https://img.shields.io/badge/Strategy-21.4%20KB%20%2F%2024%20KB-blue)](#overview)
 [![Hybrid](https://img.shields.io/badge/Hedge-30%25%20IL%20%2F%2070%25%20Synthetic-purple)](STRATEGY_REVISION.md)
+
+</div>
 
 On-chain stablecoin (FUSD) on Avalanche C-Chain: LST collateral, GMX perpetual shorts, hybrid delta-neutral hedging, and compound-style yield to holders.
 
