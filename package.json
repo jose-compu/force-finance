@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "hardhat compile",
+    "ci": "npm run compile && npm test",
     "test": "npm run test:unit",
     "test:unit": "hardhat test test/unit/AvalancheLSTStrategy.test.js test/unit/AvalancheOracleManager.test.js test/unit/AvalancheOracleManager.Basic.test.js test/unit/AvalancheOracleManager.Prices.test.js test/unit/AvalancheOracleManager.Integration.test.js test/unit/DeltaNeutralRebalancer.test.js test/unit/FinancialFailureScenarios.test.js test/unit/GMXFuturesManager.test.js test/unit/MockSAVAX.test.js test/unit/SAVAXRewardsDistribution.test.js test/ForceVault.test.js",
     "test:integration": "hardhat test test/integration",

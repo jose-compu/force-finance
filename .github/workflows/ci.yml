@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Compile and test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Compile contracts
+        run: npm run compile
+
+      - name: Run unit tests
+        run: npm test
+
+      - name: Check strategy contract size
+        run: |
+          node <<'EOF'
+          const artifact = require("./artifacts/contracts/AvalancheLSTStrategy.sol/AvalancheLSTStrategy.json");
+          const bytes = (artifact.deployedBytecode.length / 2) - 1;
+          const limit = 24576;
+          const kb = bytes / 1024;
+          console.log(`AvalancheLSTStrategy: ${kb.toFixed(2)} KB (${bytes} bytes)`);
+          if (bytes > limit) {
+            console.error(`Contract exceeds mainnet limit of ${limit} bytes`);
+            process.exit(1);
+          }
+          EOF
