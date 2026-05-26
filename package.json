@@ -1,0 +1,53 @@
+{
+  "name": "force-finance",
+  "version": "1.0.0",
+  "description": "Delta-neutral stablecoin architecture",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "npm run test:unit",
+    "test:unit": "hardhat test test/unit/AvalancheLSTStrategy.test.js test/unit/AvalancheOracleManager.test.js test/unit/AvalancheOracleManager.Basic.test.js test/unit/AvalancheOracleManager.Prices.test.js test/unit/AvalancheOracleManager.Integration.test.js test/unit/DeltaNeutralRebalancer.test.js test/unit/FinancialFailureScenarios.test.js test/unit/GMXFuturesManager.test.js test/unit/MockSAVAX.test.js test/unit/SAVAXRewardsDistribution.test.js test/ForceVault.test.js",
+    "test:integration": "hardhat test test/integration",
+    "test:e2e": "hardhat run scripts/e2e-test.js --network hardhat",
+    "test:fork": "FORK_AVALANCHE=true hardhat test test/fork",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy-local": "hardhat run scripts/deploy-local.js --network localhost",
+    "node": "hardhat node",
+    "dev": "concurrently \"npm run node\" \"sleep 5 && npm run create-placeholder && sleep 20 && npm run deploy-local\" \"sleep 30 && npm run frontend\"",
+    "start:local": "bash scripts/start-local-testnet.sh",
+    "create-placeholder": "node -e \"const fs=require('fs'); const src='./deployments-static.json'; const dest='./frontend/src/deployments.json'; fs.copyFileSync(src, dest); console.log('Copied', src, 'to', dest);\"",
+    "frontend": "cd frontend && npm start",
+    "install-frontend": "cd frontend && npm install",
+    "setup": "npm install && npm run install-frontend && npm run compile && npm run create-placeholder"
+  },
+  "keywords": [
+    "stablecoin",
+    "defi",
+    "delta-neutral",
+    "ethereum"
+  ],
+  "author": "Force Finance",
+  "license": "BUSL-1.1",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@openzeppelin/contracts": "^4.9.0",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.0",
+    "chai": "^4.5.0",
+    "chai-as-promised": "^7.1.1",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.22.0",
+    "mocha": "^10.8.2",
+    "typescript": "^5.1.0"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.0"
+  },
+  "directories": {
+    "test": "test"
+  }
+}

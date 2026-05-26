@@ -1,0 +1,30 @@
+FORCE FINANCE HYBRID STRATEGY ANALYSIS
+==================================================
+
+Source: STRATEGY_REVISION.md + simulations/hybrid_strategy.py
+
+RECOMMENDED PARAMETERS (IMPLEMENTED IN CONTRACT):
+- Rebalancing Threshold: 0.8% (80 basis points)
+- IL Exposure: 30% (3000 bps)
+- Synthetic Exposure: 70% (7000 bps)
+- Volatility Circuit Breaker: 5% observed move -> IL reduced to 15%
+- Emergency Mode: 100% synthetic (`emergencySyntheticOnly`)
+
+PROJECTED HYBRID PERFORMANCE (simulation target):
+- Value Volatility: ~2.5% +/- 0.5%
+- Rebalance Frequency: ~3.5 times/day at 0.8% threshold
+- Annual Costs: ~0.15% of TVL
+- Max Deviation: ~3.5%
+
+STILL PENDING:
+- Uniswap V3 LP integration for IL leg
+- Full GMX execution path on testnet/mainnet
+- Dynamic IL ratio optimization (Phase 4)
+
+SOLIDITY REFERENCE:
+- contracts/AvalancheLSTStrategy.sol
+- getHybridExposureMetrics()
+- setEmergencySyntheticOnly(bool)
+
+Run simulation:
+  cd simulations && python run_simulation.py --quick

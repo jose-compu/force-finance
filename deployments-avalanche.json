@@ -1,0 +1,39 @@
+{
+  "network": "avalanche",
+  "chainId": 43114,
+  "timestamp": 1756136701007,
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "testUsers": [
+    "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+  ],
+  "contracts": {
+    "AvalancheLSTStrategy": "0x2107c6AC639F21F27D38C1b048C825Ee42536690",
+    "AvalancheOracleManager": "0xA96aA8D425260B5514300a0b640313b4F727B0CE",
+    "GMXFuturesManager": "0x8F2D2b8E8F2D2b8E8F2D2b8E8F2D2b8E8F2D2b8E",
+    "DeltaNeutralRebalancer": "0xc44C2b82dbEef6DdB195E0432Fa5e755C345D1e3",
+    "ForceStablecoin": "0x063A1D1Cfc6354FB21dC6DE6fBe4B748cbD01941",
+    "EmergencyControls": "0xbd605Ad2010E12c16B0cd0F2B8FE3c6d90BB51E7",
+    "LeverageOptimizer": "0xA6b6bAe20a4A11CdeE202DbdE53e89E776f2dAC9",
+    "RebalancingEngine": "0x4e95639548AA2486400b271EB62E31fe3215aC0d"
+  },
+  "tokens": {
+    "WAVAX": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+    "USDC_E": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
+    "WETH_E": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
+    "WBTC_E": "0x50b7545627a5162F82A992c33b87aDc75187B218",
+    "SAVAX": "0x2B2C81E08f1aF8835aB89c2Ffc7e21D6DfFC7E2C",
+    "STETH_E": "0x3D9eAB723df76808bB84c05b20de27A2e69EF293",
+    "BTC_B": "0x152b9d0FdC40C096757F570A51E494bd4b943E50"
+  },
+  "protocols": {
+    "GMX_ROUTER": "0x5F719c2F1095F7B9fc68a68e35B51194f4b6abe8",
+    "GMX_VAULT": "0x9ab2De34A33fB459b538c43f251eB825645e8595",
+    "GMX_POSITION_ROUTER": "0xffF6D276Bc37c61A23f06410Dce4A400f66420f8",
+    "BENQI_COMPTROLLER": "0x486Af39519B4Dc9a7fCcd318217352830E8AD9b4",
+    "BENQI_SAVAX": "0x2B2C81E08f1aF8835aB89c2Ffc7e21D6DfFC7E2C",
+    "AAVE_POOL": "0x794a61358D6845594F94dc1DB02A252b5b4814aD"
+  },
+  "description": "Avalanche mainnet address template for Force Finance",
+  "note": "Contract addresses are placeholders until mainnet deployment. Token and protocol addresses are real Avalanche C-Chain references."
+}

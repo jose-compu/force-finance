@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+.pnp
+.pnp.js
+
+# Environment and secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# Hardhat / Solidity build output
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Generated deployment manifests (use deploy-local or copy from *.example.json)
+deployments.json
+deployments-local.json
+deployments-missing.json
+frontend/src/deployments.json
+
+# Logs and runtime output
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+hardhat-node.log
+
+# Frontend build
+frontend/build/
+frontend/.eslintcache
+frontend/coverage/
+
+# Test / coverage
+coverage/
+.nyc_output/
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cursor / local tooling
+.cursor/
+
+# Optional local debug scripts output
+debug-output/
